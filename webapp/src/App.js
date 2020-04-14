@@ -2,6 +2,8 @@ import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import Card from '@material-ui/core/Card';
 import Typography from '@material-ui/core/Typography';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
 import axios from 'axios';
 
 class App extends React.Component {
@@ -48,6 +50,12 @@ class App extends React.Component {
   render(){
     return (
       <div style={{ width: "90%", margin: "2%" }}>
+        <AppBar  style={{ background: 'linear-gradient(90deg, rgba(35,77,32,1) 47%, rgba(240,247,218,1) 92%)' }}>
+          <Toolbar>
+            <Typography variant="h4" style={{"text-align": "center",  width: "100%"}}>FastText Trained With Glue Dataset</Typography>
+          </Toolbar>
+        </AppBar>
+        <div style={{ width: "100%", padding: "1%" }}>
         <TextField label="Enter a word to find similarity" name="query" style={{ width: "98%", margin: "2%" }} margin="normal" variant="outlined" value={this.state.query} onChange={this.handleChange} />
 
         {
@@ -94,6 +102,7 @@ class App extends React.Component {
                   )
           })
         }
+        </div>
       </div>
     );
   }
