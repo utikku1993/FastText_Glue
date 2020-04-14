@@ -85,7 +85,7 @@ class App extends React.Component {
                           </Typography>
                         </td>
                         <td rowSpan={1} style={{ width: "95%", margin: "1%" }}>
-                          <Typography style={{ fontSize: 14, background: backgroundGrad, color: 'white' }}  color="textSecondary" gutterBottom>
+                          <Typography style={{ fontSize: 14, background: backgroundGrad, color: 'white', 'padding-left': '1%' }}  color="textSecondary" gutterBottom>
                             {member[1].toFixed(4) * 100}%
                           </Typography>
                         </td>
