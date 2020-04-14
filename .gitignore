@@ -207,4 +207,7 @@ glue_data/*
 # Model
 model/
 
+# data files
+*/*.tsv
+
 # End of https://www.gitignore.io/api/react,flask,python,windows
